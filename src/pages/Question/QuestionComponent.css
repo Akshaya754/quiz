@@ -1,0 +1,114 @@
+.custom-question-card {
+  margin: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 850px;
+  height: 580px;
+  font-size: 24px;
+}
+
+.App-heading {
+  font-size: 30px;
+  color: #333;
+}
+.custom-options-list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.custom-option {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid #ccc;
+  border-radius: 5px; */
+  margin-left: 30px;
+  justify-content: space-between;
+}
+
+.custom-option-label {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  color: rgb(52, 52, 52);
+}
+
+.custom-option-radio {
+  margin-right: 15px;
+}
+
+.custom-button-container {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.custom-option-button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-size: 24px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top: 2px;
+  width: 150px;
+}
+
+.custom-submits-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+.custom-next-button:hover {
+  background-color: green;
+}
+.custom-next-button {
+  background-color: green;
+  color: black;
+}
+
+.custom-skip-button {
+  background-color: #f44336;
+}
+
+.custom-skip-button:hover {
+  background-color: #f44336;
+}
+
+.question-no {
+  margin-top: -40px;
+}
+.timer-table {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.timer-box {
+  width: fit-content;
+  height: 15px;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.timer-text {
+  font-size: 16px;
+}
+
+.timer-value {
+  margin-bottom: 2px;
+  padding: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.custom-question {
+  margin-top: 30px;
+}

@@ -1,0 +1,44 @@
+{
+    "quiz": {
+      "title": "General Knowledge Quiz",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Which state is the capital of India? Which state is the capital of India? Which state is the capital of India? Which state is the capital of India? Which state is the capital of India?Which state is the capital of India?",
+          "options": ["Delhi", "Kerala", "Tamilnadu", "Tripura"],
+          "correct_answer": "Delhi"
+        },
+        {
+          "id": 2,
+          "question": "Which planet is known as the Red Planet?",
+          "options": ["Earth", "Mars", "Jupiter", "Venus"],
+          "correct_answer": "Mars"
+        },
+        {
+          "id": 3,
+          "question": "Which animal is known as ship of Desert?",
+          "options": ["Lion", "Camel", "Giraffe", "Tiger"],
+          "correct_answer": "Camel"
+        },
+        {
+          "id": 4,
+          "question": "Which country has highest population'?",
+          "options": ["China", "India", "Nepal", "Tailand"],
+          "correct_answer": "China"
+        },
+        {
+          "id": 5,
+          "question": "What is the chemical symbol for gold?",
+          "options": ["Au", "Ag", "Fe", "Cu"],
+          "correct_answer": "Au"
+        },
+        {
+          "id": 6,
+          "question": "What is H2o",
+          "options": ["water", "gold", "silver", "Cu"],
+          "correct_answer": "Au"
+        }
+      ]
+    }
+  }
+  
