@@ -49,11 +49,7 @@ const QuestionComponent = ({
     return () => {
       clearTimeout(timerId);
     };
-
-
   }, [timer]);
-
- 
 
   return (
     <div className="custom-question-card">
@@ -64,8 +60,8 @@ const QuestionComponent = ({
             <p>Time out</p>
           ) : (
             <>
-              <h4 className="timer-text">Time Left : </h4>
-              <h4 className="timer-value">{timer}</h4>
+              <h4 className="timer-text">Time left: </h4>
+              <h4 className="timer-value">{timer}sec</h4>
             </>
           )}
         </div>
@@ -94,33 +90,35 @@ const QuestionComponent = ({
       </ul>
 
       <div className="custom-button-container">
-        <button
-          onClick={handleSkip}
-          className="custom-option-button custom-skip-button"
-        >
-          Skip
-        </button>
-        {isLastQuestion ? (
+        <p className="question-no">{`${
+          questionNumber + 1
+        } of ${totalQuestions} Questions`}</p>
+        <div>
           <button
-            onClick={handleSubmit}
-            disabled={!selectedOption}
-            className="custom-option-button custom-submits-button"
+            onClick={handleSkip}
+            className="custom-option-button custom-skip-button"
           >
-            Submit
+            Skip
           </button>
-        ) : (
-          <button
-            onClick={handleSubmit}
-            disabled={!selectedOption}
-            className="custom-option-button custom-next-button"
-          >
-            Next
-          </button>
-        )}
+          {isLastQuestion ? (
+            <button
+              onClick={handleSubmit}
+              disabled={!selectedOption}
+              className="custom-option-button custom-submits-button"
+            >
+              Submit
+            </button>
+          ) : (
+            <button
+              onClick={handleSubmit}
+              disabled={!selectedOption}
+              className="custom-option-button custom-next-button"
+            >
+              Next
+            </button>
+          )}
+        </div>
       </div>
-      <p className="question-no">{`${
-        questionNumber + 1
-      } of ${totalQuestions} Questions`}</p>
     </div>
   );
 };
