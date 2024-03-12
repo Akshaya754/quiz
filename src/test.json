@@ -28,7 +28,7 @@
         },
         {
           "id": 5,
-          "question": "What is the chemical symbol for gold?",
+          "question": "What is the chemical symbol for gold? " ,
           "options": ["Au", "Ag", "Fe", "Cu"],
           "correct_answer": "Au"
         },
@@ -36,7 +36,7 @@
           "id": 6,
           "question": "What is H2o",
           "options": ["water", "gold", "silver", "Cu"],
-          "correct_answer": "Au"
+          "correct_answer": "water"
         }
       ]
     }

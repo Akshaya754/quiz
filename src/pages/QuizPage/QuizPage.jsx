@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import questionsData from "../../test.json";
-import QuestionComponent from "../Question/QuestionComponent";
+import QuestionComponent from "../../Components/Question/QuestionComponent";
 import TopNavbar from "../../Components/NavBar/NavBar";
 import ScoreCard from "../ScoreCard/ScoreCard";
-import "./QuizPage.css";
+import backgroundImage from "../../Assets/Images/greenbackground.jpg";
 
 const QuizPage = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -32,7 +32,6 @@ const QuizPage = () => {
 
   const handleSkip = () => {
     setScore((prevScore) => prevScore - 1.5);
-    // setTotalAttended((prevTotalAttended) => prevTotalAttended + 1);
     setTotalWrong((prevTotalWrong) => prevTotalWrong + 1);
 
     setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
@@ -44,7 +43,12 @@ const QuizPage = () => {
   };
 
   return (
-    <div className="quiz-page-container">
+    <div
+      className=" quiz-page-container bg-cover bg-center mt-28 md:mt-0 border-4 flex flex-col items-center justify-center"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundAttachment: 'fixed', height: "100vh"
+      }}    >
       <TopNavbar />
       {currentQuestionIndex < questionsData.quiz.questions.length ? (
         <QuestionComponent

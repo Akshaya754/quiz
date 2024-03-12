@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "./NavBar.css";
 
 const TopNavbar = () => {
   const navigate = useNavigate();
@@ -18,26 +17,32 @@ const TopNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="top-navbar">
-      <div className="navbar-container">
-        <div className="left-content">
+    <nav className="bg-black text-white p-2 fixed top-0 left-0 right-0 h-16">
+      <div className="flex justify-between items-center">
+        <div className="text-3xl">
           <Link to="/">QuizApp</Link>
         </div>
-        <div className="right-content">
-          <div className="hamburger-menu">
+        <div className="flex items-center">
+          <div className="mr-3">
             <button
-              className="hamburger-button"
+              className="text-white text-3xl"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               ☰
             </button>
           </div>
           {menuOpen && (
-            <div className="menu-dropdown">
-              <button className="menu-option" onClick={handleTakeQuiz}>
+            <div className="absolute top-16 right-0 bg-gray-800 shadow-md rounded">
+              <button
+                className="block px-4 py-2 text-white hover:bg-gray-600"
+                onClick={handleTakeQuiz}
+              >
                 Take a Quiz
               </button>
-              <button className="menu-option" onClick={handleLogout}>
+              <button
+                className="block px-4 py-2 text-white hover:bg-gray-600"
+                onClick={handleLogout}
+              >
                 Logout
               </button>
             </div>
